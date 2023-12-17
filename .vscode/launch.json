@@ -1,0 +1,37 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Attach",
+            "type": "node",
+            "request": "attach",
+            "sourceMaps": true,
+            "debugServer": 4711,
+            "enableContentValidation" : true,
+            "localRoot" : null,
+            // "trace" : true,
+            "outFiles" : ["./lib/*"],
+            // "resolveSourceMapLocations" : [
+            //     "**",
+            //     "!**/node_modules/**"
+            //   ],
+            "sourceMapPathOverrides": {
+                "lib/*": "${workspaceFolder}/lib/*"
+            }
+        }
+    ]
+}
+
+// {
+//     "version": "0.2.0",
+//     "configurations": [
+//         {
+//             "type": "graalvm",
+//             "request": "launch",
+//             "name": "Launch JS App",
+//             "outputCapture": "std",
+//             "protocol": "debugAdapter",
+//             "program": "${workspaceFolder}/test_jasmine_graalvm.js"
+//         }
+//     ]
+// }
